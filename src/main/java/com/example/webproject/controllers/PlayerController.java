@@ -1,5 +1,7 @@
 package com.example.webproject.controllers;
 
+import com.example.webproject.services.PlayerService;
+import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 
 @Path("/hello-world")

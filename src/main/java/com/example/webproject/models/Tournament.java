@@ -1,10 +1,15 @@
 package com.example.webproject.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
 import java.io.Serializable;
 import java.time.LocalDate;
-
-public class Tournament implements Serializable {
-
+@Entity
+public class Tournament {
+    @Id
+    @GeneratedValue
     private Long id;
     private String name;
     private String sport;
@@ -52,5 +57,6 @@ public class Tournament implements Serializable {
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
+
 }
 
